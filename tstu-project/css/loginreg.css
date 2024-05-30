@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+:root {
+	--accent: #647ec1;
+	--text: #343a40;
+	--regular-text: 16px;
+	--lineheight: 1.65;
+	--systemfont: -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+}
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+	font-size: var(--regular-text);
+	/* line-height: var(--lineheight); */
+	color: var(--text);
+	min-width: 320px;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+header {
+    padding: 20px;
+    text-align: center;
+    background-color: #fff;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.logo {
+    max-width: 150px;
+}
+
+main {
+    display: flex;
+    height: calc(100vh - 60px);
+}
+
+.left-section {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f9f9f9;
+    padding: 20px;
+}
+
+.illustration {
+    max-width: 100%;
+    height: auto;
+}
+
+.right-section {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--text);
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px;
+    background-color: #fff;
+}
+
+.right-section h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.right-section p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="tel"],
+input[type="password"] {
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.checkbox-container input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: var(--accent);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #5a52d4;
+}
+
+a {
+    color: var(--accent);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+header {
+    padding: 20px;
+    text-align: center;
+    background-color: #fff;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.logo {
+    max-width: 150px;
+}
+
+main {
+    display: flex;
+    height: calc(100vh - 60px);
+}
+
+.left-section {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f9f9f9;
+    padding: 20px;
+}
+
+.illustration {
+    max-width: 100%;
+    height: auto;
+}
+
+.right-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px;
+    background-color: #fff;
+}
+
+.right-section h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.right-section p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="tel"],
+input[type="password"] {
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.checkbox-container input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #6C63FF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #5a52d4;
+}
+
+a {
+    color: #6C63FF;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Медиазапросы для адаптивного дизайна */
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .left-section {
+        order: 2;
+        padding: 20px;
+    }
+
+    .right-section {
+        order: 1;
+        padding: 20px;
+    }
+
+    .right-section h1 {
+        font-size: 20px;
+    }
+
+    .right-section p {
+        font-size: 14px;
+    }
+
+    button {
+        padding: 10px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 10px;
+    }
+
+    .logo {
+        max-width: 120px;
+    }
+
+    .right-section {
+        padding: 10px;
+    }
+
+    .right-section h1 {
+        font-size: 18px;
+    }
+
+    .right-section p {
+        font-size: 12px;
+    }
+
+    input[type="tel"],
+    input[type="password"] {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    button {
+        padding: 8px;
+        font-size: 14px;
+    }
+}
+ 
